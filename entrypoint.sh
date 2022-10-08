@@ -48,9 +48,11 @@ case ${SPAWN_LOGS} in
             "UNIX Time: " >> sync-upstream-repo
             date +"%s" >> sync-upstream-repo
             git add sync-upstream-repo
+            git reset .github/workflows
             git commit sync-upstream-repo -m "Syncing upstream";;
   (false)   echo "Not spawning time logs"
 esac
+
 
 git push origin
 
