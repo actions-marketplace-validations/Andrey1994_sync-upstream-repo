@@ -22,9 +22,9 @@ if [[ -z "$DOWNSTREAM_BRANCH" ]]; then
   DOWNSTREAM_BREANCH=UPSTREAM_BRANCH
 fi
 
-if ! echo "$UPSTREAM_REPO" | grep '\.git'; then
-  UPSTREAM_REPO="https://github.com/${UPSTREAM_REPO_PATH}.git"
-fi
+# if ! echo "$UPSTREAM_REPO" | grep '\.git'; then
+#  UPSTREAM_REPO="https://github.com/${UPSTREAM_REPO_PATH}.git"
+# fi
 
 echo "UPSTREAM_REPO=$UPSTREAM_REPO"
 
