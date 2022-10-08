@@ -1,6 +1,6 @@
-name: Sync and merge upstream repository with your current repository
-description: Syncs and merges your current repository with the upstream repository. Fork of https://github.com/mheene/sync-upstream-repo.
-author: Dabreadman
+name: Auto sync your fork upstream
+description: Syncs and merges your current repository with the upstream repository. Fork of https://github.com/dabreadman/sync-upstream-repo.
+author: rovast
 
 inputs:
   upstream_repo:
