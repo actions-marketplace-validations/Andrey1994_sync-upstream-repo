@@ -48,7 +48,6 @@ case ${SPAWN_LOGS} in
             "UNIX Time: " >> sync-upstream-repo
             date +"%s" >> sync-upstream-repo
             git add sync-upstream-repo
-            git reset .github/workflows
             git commit sync-upstream-repo -m "Syncing upstream";;
   (false)   echo "Not spawning time logs"
 esac
@@ -64,7 +63,6 @@ then
   exit 1
 elif [[ $MERGE_RESULT != *"Already up to date."* ]]
 then
-  git reset .github/workflows
   git commit -m "Merged upstream"
   git push ${PUSH_ARGS} origin ${DOWNSTREAM_BRANCH} || exit $?
 fi
