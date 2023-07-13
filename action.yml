@@ -1,6 +1,6 @@
-name: Auto sync your fork upstream
-description: Auto sync your fork upstream. Fork of https://github.com/dabreadman/sync-upstream-repo.
-author: rovast
+name: Auto sync your fork upstream Andrey1994
+description: Auto sync your fork upstream. Fork of https://github.com/Andrey1994/sync-upstream-repo.
+author: andrey1994
 
 inputs:
   upstream_repo:
